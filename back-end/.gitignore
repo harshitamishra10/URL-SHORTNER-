@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Environment variables (IMPORTANT!)
+.env
+.env.local
+.env.atlas
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# OS files
+.DS_Store
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
