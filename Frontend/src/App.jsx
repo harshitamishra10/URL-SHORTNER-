@@ -1,21 +1,42 @@
 import React from 'react'
 import Register from './modules/user/pages/Register';
+import Login from './modules/user/pages/Login';
+import { Button } from '@radix-ui/themes';
+import { AppRoutes } from './shared/routes/AppRoutes';
+import { useNavigate } from 'react-router-dom';
+import { UrlShort } from './modules/urlshortner/pages/urlShort';
 
+
+// function App(){
+//   return(
+//     <UrlShort/>
+//   )
+// }
+// export default App;
 function App() {
 
-
+const navigate = useNavigate();
  return(
-  <Register></Register>
-  // <div>
-  //  <h1>Hello React js</h1>
-  //  <h2>Brain Mentor</h2>
-  //  </div>
+  <>
+  
+  <Button onClick={() =>{navigate('/register')}}
+   variant="classic"
+   type="button" size="3" 
+   style = {{margin : 3}}>
+    register
+   </Button>
+   <Button onClick={() =>{navigate('/login') }} 
+   variant="surface"
+   type="button" size="3" 
+   style = {{margin : 3}}>
+    Login
+   </Button>
+
+
+   <AppRoutes/>
+  </>
    );
-  //  return React.createElement("div", 
-  //   null,
-  //   React.createElement("h1" , null, "Hello React js"),
-  //    React.createElement("h2" , null, "Brain mentors")
-  // );
+  
 }
 
 export default App;
