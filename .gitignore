@@ -3,8 +3,6 @@ node_modules/
 */node_modules/
 
 # Environment variables (IMPORTANT - contains passwords!)
-.env
-.env.local
 .env.*.local
 */.env
 */.env.local
@@ -29,7 +27,6 @@ desktop.ini
 *.swo
 
 # IDE
-.vscode/
 .idea/
 *.suo
 *.ntvs*
@@ -44,3 +41,4 @@ coverage/
 *.tmp
 *.temp
 .cache/
+config.bat
